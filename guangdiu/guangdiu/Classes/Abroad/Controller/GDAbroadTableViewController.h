@@ -6,8 +6,8 @@
 //  Copyright © 2016年 WangShengFeng. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "GDBaseTableViewController.h"
 
-@interface GDAbroadTableViewController : UITableViewController
+@interface GDAbroadTableViewController : GDBaseTableViewController
 
 @end

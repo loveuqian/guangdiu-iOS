@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3721E50C1CAB702100D4957D /* GDListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3721E50B1CAB702100D4957D /* GDListModel.m */; };
 		37A9DA671CAA855300036B86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A9DA661CAA855300036B86 /* main.m */; };
 		37A9DA6A1CAA855300036B86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A9DA691CAA855300036B86 /* AppDelegate.m */; };
 		37A9DA721CAA855300036B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37A9DA711CAA855300036B86 /* Assets.xcassets */; };
@@ -19,10 +20,15 @@
 		37A9DAB61CAA98DC00036B86 /* GDBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A9DAB51CAA98DC00036B86 /* GDBaseTableViewController.m */; };
 		37A9DAB91CAA98E900036B86 /* GDBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A9DAB81CAA98E900036B86 /* GDBaseButton.m */; };
 		37A9DABC1CAA995900036B86 /* GDBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A9DABB1CAA995900036B86 /* GDBaseCell.m */; };
+		37CA93311CAB7A0C00969902 /* GDHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CA93301CAB7A0C00969902 /* GDHotViewController.m */; };
+		37CA93341CAB84F500969902 /* GDHotModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CA93331CAB84F500969902 /* GDHotModel.m */; };
 		872C464C7AC342344AFCCAFB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B3C6DC97D569E391A6F14BB /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3721E5091CAB6F2300D4957D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3721E50A1CAB702100D4957D /* GDListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDListModel.h; sourceTree = "<group>"; };
+		3721E50B1CAB702100D4957D /* GDListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDListModel.m; sourceTree = "<group>"; };
 		37A9DA621CAA855200036B86 /* guangdiu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = guangdiu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37A9DA661CAA855300036B86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		37A9DA681CAA855300036B86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -47,6 +53,10 @@
 		37A9DAB81CAA98E900036B86 /* GDBaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDBaseButton.m; sourceTree = "<group>"; };
 		37A9DABA1CAA995900036B86 /* GDBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDBaseCell.h; sourceTree = "<group>"; };
 		37A9DABB1CAA995900036B86 /* GDBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDBaseCell.m; sourceTree = "<group>"; };
+		37CA932F1CAB7A0C00969902 /* GDHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDHotViewController.h; sourceTree = "<group>"; };
+		37CA93301CAB7A0C00969902 /* GDHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDHotViewController.m; sourceTree = "<group>"; };
+		37CA93321CAB84F500969902 /* GDHotModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDHotModel.h; sourceTree = "<group>"; };
+		37CA93331CAB84F500969902 /* GDHotModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDHotModel.m; sourceTree = "<group>"; };
 		59ADA4F214E86818EDFA2C5C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6B3C6DC97D569E391A6F14BB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8DD8753B4661C7EA4D7A63D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +181,8 @@
 			children = (
 				37A9DAA71CAA900000036B86 /* GDHomeViewController.h */,
 				37A9DAA81CAA900000036B86 /* GDHomeViewController.m */,
+				37CA932F1CAB7A0C00969902 /* GDHotViewController.h */,
+				37CA93301CAB7A0C00969902 /* GDHotViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,6 +190,10 @@
 		37A9DA831CAA8C8100036B86 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3721E50A1CAB702100D4957D /* GDListModel.h */,
+				3721E50B1CAB702100D4957D /* GDListModel.m */,
+				37CA93321CAB84F500969902 /* GDHotModel.h */,
+				37CA93331CAB84F500969902 /* GDHotModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -233,6 +249,7 @@
 				37A9DAB81CAA98E900036B86 /* GDBaseButton.m */,
 				37A9DABA1CAA995900036B86 /* GDBaseCell.h */,
 				37A9DABB1CAA995900036B86 /* GDBaseCell.m */,
+				3721E5091CAB6F2300D4957D /* PrefixHeader.pch */,
 				37A9DAB01CAA933D00036B86 /* Src */,
 			);
 			path = Other;
@@ -411,12 +428,15 @@
 			files = (
 				37A9DA6A1CAA855300036B86 /* AppDelegate.m in Sources */,
 				37A9DA931CAA8CDC00036B86 /* GDNavigationController.m in Sources */,
+				37CA93311CAB7A0C00969902 /* GDHotViewController.m in Sources */,
 				37A9DAAC1CAA901300036B86 /* GDAbroadTableViewController.m in Sources */,
 				37A9DAA91CAA900000036B86 /* GDHomeViewController.m in Sources */,
+				3721E50C1CAB702100D4957D /* GDListModel.m in Sources */,
 				37A9DA961CAA8CED00036B86 /* GDTabBarController.m in Sources */,
 				37A9DAB91CAA98E900036B86 /* GDBaseButton.m in Sources */,
 				37A9DAAF1CAA901A00036B86 /* GDRankTableViewController.m in Sources */,
 				37A9DAB31CAA933D00036B86 /* MLNavigationController.m in Sources */,
+				37CA93341CAB84F500969902 /* GDHotModel.m in Sources */,
 				37A9DAB61CAA98DC00036B86 /* GDBaseTableViewController.m in Sources */,
 				37A9DA671CAA855300036B86 /* main.m in Sources */,
 				37A9DABC1CAA995900036B86 /* GDBaseCell.m in Sources */,
@@ -514,6 +534,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = guangdiu/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = guangdiu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -528,6 +549,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = guangdiu/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = guangdiu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

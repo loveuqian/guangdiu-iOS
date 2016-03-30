@@ -1,0 +1,34 @@
+//
+//  PrefixHeader.pch
+//  guangdiu
+//
+//  Created by WangShengFeng on 16/3/30.
+//  Copyright © 2016年 WangShengFeng. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#endif
+
+#define GDWeakSelf __weak typeof(self) weakSelf = self
+
+#define mainScreenWidth [UIScreen mainScreen].bounds.size.width
+#define mainScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_RETINA ([[UIScreen mainScreen] scale] >= 2.0)
+
+#define SCREEN_MAX_LENGTH (MAX(mainScreenWidth, mainScreenHeight))
+#define SCREEN_MIN_LENGTH (MIN(mainScreenWidth, mainScreenHeight))
+
+#define IS_IPHONE_4_OR_LESS (IS_IPHONE && SCREEN_MAX_LENGTH < 568.0)
+#define IS_IPHONE_5 (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0)
+#define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
+#define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
+
+#endif /* PrefixHeader_pch */
