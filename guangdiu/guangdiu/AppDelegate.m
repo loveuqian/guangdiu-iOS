@@ -20,7 +20,6 @@
     if (!_window) {
         _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
         [_window makeKeyAndVisible];
-        
     }
     return _window;
 }

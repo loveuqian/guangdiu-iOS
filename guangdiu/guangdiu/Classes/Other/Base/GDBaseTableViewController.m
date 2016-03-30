@@ -14,4 +14,11 @@
 
 @implementation GDBaseTableViewController
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.tableView.tableFooterView = [[UIView alloc] init];
+}
+
 @end

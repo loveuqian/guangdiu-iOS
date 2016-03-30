@@ -22,66 +22,64 @@
 {
     [self setupChildViewController];
     
-//    [self setupTabBar];
-//    
-//    [self setupItems];
+    //    [self setupTabBar];
+    //
+    //    [self setupItems];
 }
 
 - (void)setupChildViewController
 {
     [self setUpOneChildViewController:[[GDHomeViewController alloc] init]
                                 Title:@"首页"
-                                image:@"tabicon_home"];
+                             TabImage:@"tabicon_home"
+                             NavImage:@"navtitle_home"];
     
     [self setUpOneChildViewController:[[GDAbroadTableViewController alloc] init]
                                 Title:@"海淘折扣"
-                                image:@"tabicon_abroad"];
+                             TabImage:@"tabicon_abroad"
+                             NavImage:@"navtitle_abroad"];
     
     [self setUpOneChildViewController:[[GDRankTableViewController alloc] init]
                                 Title:@"小时风云榜"
-                                image:@"tabicon_rank"];
+                             TabImage:@"tabicon_rank"
+                             NavImage:@"navtitle_rank"];
 }
 
 - (void)setUpOneChildViewController:(UIViewController *)vc
                               Title:(NSString *)title
-                              image:(NSString *)image
+                           TabImage:(NSString *)tabImage
+                           NavImage:(NSString *)navImage
 {
     GDNavigationController *navVC = [[GDNavigationController alloc] initWithRootViewController:vc];
-    vc.tabBarItem.title = title;
-    vc.tabBarItem.image = [UIImage imageNamed:image];
-    
+    vc.title = title;
+    vc.tabBarItem.image = [UIImage imageNamed:tabImage];
+    UIImageView *navImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:navImage]];
+    vc.navigationItem.titleView = navImageView;
     [self addChildViewController:navVC];
 }
 
 - (void)setupTabBar
 {
-//    [self setValue:[[XMTabBar alloc] init] forKey:@"tabBar"];
-//    
-//    UIView *bgView = [[UIView alloc] initWithFrame:self.tabBar.bounds];
-//    bgView.backgroundColor = [UIColor darkGrayColor];
-//    [self.tabBar insertSubview:bgView atIndex:0];
-//    [self.tabBar setShadowImage:[[UIImage alloc] init]];
-//    [self.tabBar setBackgroundImage:[[UIImage alloc] init]];
+    //    [self setValue:[[XMTabBar alloc] init] forKey:@"tabBar"];
+    //
+    //    UIView *bgView = [[UIView alloc] initWithFrame:self.tabBar.bounds];
+    //    bgView.backgroundColor = [UIColor darkGrayColor];
+    //    [self.tabBar insertSubview:bgView atIndex:0];
+    //    [self.tabBar setShadowImage:[[UIImage alloc] init]];
+    //    [self.tabBar setBackgroundImage:[[UIImage alloc] init]];
 }
 
 - (void)setupItems
 {
-//    NSMutableDictionary *normalAttrs = [NSMutableDictionary dictionary];
-//    normalAttrs[NSForegroundColorAttributeName] = XMCommonLightGrayColor;
-//    
-//    NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
-//    selectedAttrs[NSForegroundColorAttributeName] = XMCommonGlodColor;
-//    
-//    UITabBarItem *item = [UITabBarItem appearance];
-//    [item setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
-//    [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
+    //    NSMutableDictionary *normalAttrs = [NSMutableDictionary dictionary];
+    //    normalAttrs[NSForegroundColorAttributeName] = XMCommonLightGrayColor;
+    //
+    //    NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
+    //    selectedAttrs[NSForegroundColorAttributeName] = XMCommonGlodColor;
+    //
+    //    UITabBarItem *item = [UITabBarItem appearance];
+    //    [item setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
+    //    [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
 }
-
-//- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
-//{
-//    if ([item.title isEqualToString:@"我"]) {
-//        [[NSNotificationCenter defaultCenter] postNotificationName:XMAnimate object:nil];
-//    }
-//}
 
 @end

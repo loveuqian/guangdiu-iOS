@@ -8,6 +8,7 @@
 
 #import "GDHotViewController.h"
 #import "GDHotModel.h"
+#import "GDDetailViewController.h"
 
 #import <AFNetworking.h>
 #import <MJRefresh.h>
@@ -37,13 +38,13 @@
     
     [self setupNav];
     
-    [self loadData];
+    [self setupRefresh];
 }
 
 - (void)setupNav
 {
     UIButton *closeButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [closeButton setTitle:@"close" forState:UIControlStateNormal];
+    [closeButton setTitle:@"关闭" forState:UIControlStateNormal];
     [closeButton sizeToFit];
     [closeButton addTarget:self action:@selector(closeBtnClick) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:closeButton];
@@ -52,6 +53,14 @@
 - (void)closeBtnClick
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)setupRefresh
+{
+    self.tableView.mj_header =
+    [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadData)];
+    
+    [self.tableView.mj_header beginRefreshing];
 }
 
 - (void)loadData
@@ -63,6 +72,7 @@
               success:^(NSURLSessionDataTask *_Nonnull task, id _Nullable responseObject) {
                   weakSelf.hotArray = [GDHotModel mj_objectArrayWithKeyValuesArray:responseObject[@"data"]];
                   [weakSelf.tableView reloadData];
+                  [weakSelf.tableView.mj_header endRefreshing];
               }
               failure:^(NSURLSessionDataTask *_Nullable task, NSError *_Nonnull error) {
                   NSLog(@"%@", error);

@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		371BE3451CABB3C6004A0471 /* GDBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 371BE3401CABB3C6004A0471 /* GDBaseButton.m */; };
+		371BE3461CABB3C6004A0471 /* GDBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 371BE3421CABB3C6004A0471 /* GDBaseCell.m */; };
+		371BE3471CABB3C6004A0471 /* GDBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371BE3441CABB3C6004A0471 /* GDBaseTableViewController.m */; };
+		371BE34B1CABB3F0004A0471 /* GDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 371BE3491CABB3F0004A0471 /* GDDetailViewController.m */; };
+		371BE34C1CABB3F0004A0471 /* GDDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371BE34A1CABB3F0004A0471 /* GDDetailViewController.xib */; };
+		371BE3531CABB8DB004A0471 /* YHWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 371BE34F1CABB8DB004A0471 /* YHWebViewProgress.m */; };
+		371BE3541CABB8DB004A0471 /* YHWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 371BE3511CABB8DB004A0471 /* YHWebViewProgressView.m */; };
+		371BE3581CABBC33004A0471 /* GDListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 371BE3561CABBC33004A0471 /* GDListCell.m */; };
+		371BE3591CABBC33004A0471 /* GDListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371BE3571CABBC33004A0471 /* GDListCell.xib */; };
+		371BE3601CABBC66004A0471 /* GDHotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 371BE35E1CABBC66004A0471 /* GDHotCell.m */; };
+		371BE3611CABBC66004A0471 /* GDHotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371BE35F1CABBC66004A0471 /* GDHotCell.xib */; };
 		3721E50C1CAB702100D4957D /* GDListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3721E50B1CAB702100D4957D /* GDListModel.m */; };
 		37A9DA671CAA855300036B86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A9DA661CAA855300036B86 /* main.m */; };
 		37A9DA6A1CAA855300036B86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A9DA691CAA855300036B86 /* AppDelegate.m */; };
@@ -17,15 +28,32 @@
 		37A9DAAC1CAA901300036B86 /* GDAbroadTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A9DAAB1CAA901300036B86 /* GDAbroadTableViewController.m */; };
 		37A9DAAF1CAA901A00036B86 /* GDRankTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A9DAAE1CAA901A00036B86 /* GDRankTableViewController.m */; };
 		37A9DAB31CAA933D00036B86 /* MLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A9DAB21CAA933D00036B86 /* MLNavigationController.m */; };
-		37A9DAB61CAA98DC00036B86 /* GDBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A9DAB51CAA98DC00036B86 /* GDBaseTableViewController.m */; };
-		37A9DAB91CAA98E900036B86 /* GDBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A9DAB81CAA98E900036B86 /* GDBaseButton.m */; };
-		37A9DABC1CAA995900036B86 /* GDBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A9DABB1CAA995900036B86 /* GDBaseCell.m */; };
 		37CA93311CAB7A0C00969902 /* GDHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CA93301CAB7A0C00969902 /* GDHotViewController.m */; };
 		37CA93341CAB84F500969902 /* GDHotModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CA93331CAB84F500969902 /* GDHotModel.m */; };
 		872C464C7AC342344AFCCAFB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B3C6DC97D569E391A6F14BB /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		371BE33F1CABB3C6004A0471 /* GDBaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDBaseButton.h; sourceTree = "<group>"; };
+		371BE3401CABB3C6004A0471 /* GDBaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDBaseButton.m; sourceTree = "<group>"; };
+		371BE3411CABB3C6004A0471 /* GDBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDBaseCell.h; sourceTree = "<group>"; };
+		371BE3421CABB3C6004A0471 /* GDBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDBaseCell.m; sourceTree = "<group>"; };
+		371BE3431CABB3C6004A0471 /* GDBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDBaseTableViewController.h; sourceTree = "<group>"; };
+		371BE3441CABB3C6004A0471 /* GDBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDBaseTableViewController.m; sourceTree = "<group>"; };
+		371BE3481CABB3F0004A0471 /* GDDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDDetailViewController.h; sourceTree = "<group>"; };
+		371BE3491CABB3F0004A0471 /* GDDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDDetailViewController.m; sourceTree = "<group>"; };
+		371BE34A1CABB3F0004A0471 /* GDDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GDDetailViewController.xib; sourceTree = "<group>"; };
+		371BE34E1CABB8DB004A0471 /* YHWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHWebViewProgress.h; sourceTree = "<group>"; };
+		371BE34F1CABB8DB004A0471 /* YHWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHWebViewProgress.m; sourceTree = "<group>"; };
+		371BE3501CABB8DB004A0471 /* YHWebViewProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHWebViewProgressView.h; sourceTree = "<group>"; };
+		371BE3511CABB8DB004A0471 /* YHWebViewProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHWebViewProgressView.m; sourceTree = "<group>"; };
+		371BE3521CABB8DB004A0471 /* YHWebViewProgressViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHWebViewProgressViewProtocol.h; sourceTree = "<group>"; };
+		371BE3551CABBC33004A0471 /* GDListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDListCell.h; sourceTree = "<group>"; };
+		371BE3561CABBC33004A0471 /* GDListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDListCell.m; sourceTree = "<group>"; };
+		371BE3571CABBC33004A0471 /* GDListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GDListCell.xib; sourceTree = "<group>"; };
+		371BE35D1CABBC66004A0471 /* GDHotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDHotCell.h; sourceTree = "<group>"; };
+		371BE35E1CABBC66004A0471 /* GDHotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDHotCell.m; sourceTree = "<group>"; };
+		371BE35F1CABBC66004A0471 /* GDHotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GDHotCell.xib; sourceTree = "<group>"; };
 		3721E5091CAB6F2300D4957D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		3721E50A1CAB702100D4957D /* GDListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDListModel.h; sourceTree = "<group>"; };
 		3721E50B1CAB702100D4957D /* GDListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDListModel.m; sourceTree = "<group>"; };
@@ -47,12 +75,6 @@
 		37A9DAAE1CAA901A00036B86 /* GDRankTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDRankTableViewController.m; sourceTree = "<group>"; };
 		37A9DAB11CAA933D00036B86 /* MLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLNavigationController.h; sourceTree = "<group>"; };
 		37A9DAB21CAA933D00036B86 /* MLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLNavigationController.m; sourceTree = "<group>"; };
-		37A9DAB41CAA98DC00036B86 /* GDBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDBaseTableViewController.h; sourceTree = "<group>"; };
-		37A9DAB51CAA98DC00036B86 /* GDBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDBaseTableViewController.m; sourceTree = "<group>"; };
-		37A9DAB71CAA98E900036B86 /* GDBaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDBaseButton.h; sourceTree = "<group>"; };
-		37A9DAB81CAA98E900036B86 /* GDBaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDBaseButton.m; sourceTree = "<group>"; };
-		37A9DABA1CAA995900036B86 /* GDBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDBaseCell.h; sourceTree = "<group>"; };
-		37A9DABB1CAA995900036B86 /* GDBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDBaseCell.m; sourceTree = "<group>"; };
 		37CA932F1CAB7A0C00969902 /* GDHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDHotViewController.h; sourceTree = "<group>"; };
 		37CA93301CAB7A0C00969902 /* GDHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDHotViewController.m; sourceTree = "<group>"; };
 		37CA93321CAB84F500969902 /* GDHotModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDHotModel.h; sourceTree = "<group>"; };
@@ -74,6 +96,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		371BE33E1CABB3C6004A0471 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				371BE33F1CABB3C6004A0471 /* GDBaseButton.h */,
+				371BE3401CABB3C6004A0471 /* GDBaseButton.m */,
+				371BE3411CABB3C6004A0471 /* GDBaseCell.h */,
+				371BE3421CABB3C6004A0471 /* GDBaseCell.m */,
+				371BE3431CABB3C6004A0471 /* GDBaseTableViewController.h */,
+				371BE3441CABB3C6004A0471 /* GDBaseTableViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		371BE34D1CABB8DB004A0471 /* WebProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				371BE34E1CABB8DB004A0471 /* YHWebViewProgress.h */,
+				371BE34F1CABB8DB004A0471 /* YHWebViewProgress.m */,
+				371BE3501CABB8DB004A0471 /* YHWebViewProgressView.h */,
+				371BE3511CABB8DB004A0471 /* YHWebViewProgressView.m */,
+				371BE3521CABB8DB004A0471 /* YHWebViewProgressViewProtocol.h */,
+			);
+			path = WebProgressView;
+			sourceTree = "<group>";
+		};
 		3788CA04FBF35A5C6728E150 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +230,9 @@
 				37A9DAA81CAA900000036B86 /* GDHomeViewController.m */,
 				37CA932F1CAB7A0C00969902 /* GDHotViewController.h */,
 				37CA93301CAB7A0C00969902 /* GDHotViewController.m */,
+				371BE3481CABB3F0004A0471 /* GDDetailViewController.h */,
+				371BE3491CABB3F0004A0471 /* GDDetailViewController.m */,
+				371BE34A1CABB3F0004A0471 /* GDDetailViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -201,6 +251,12 @@
 		37A9DA841CAA8C8100036B86 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				371BE3551CABBC33004A0471 /* GDListCell.h */,
+				371BE3561CABBC33004A0471 /* GDListCell.m */,
+				371BE3571CABBC33004A0471 /* GDListCell.xib */,
+				371BE35D1CABBC66004A0471 /* GDHotCell.h */,
+				371BE35E1CABBC66004A0471 /* GDHotCell.m */,
+				371BE35F1CABBC66004A0471 /* GDHotCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -243,13 +299,9 @@
 		37A9DA891CAA8C8100036B86 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				37A9DAB41CAA98DC00036B86 /* GDBaseTableViewController.h */,
-				37A9DAB51CAA98DC00036B86 /* GDBaseTableViewController.m */,
-				37A9DAB71CAA98E900036B86 /* GDBaseButton.h */,
-				37A9DAB81CAA98E900036B86 /* GDBaseButton.m */,
-				37A9DABA1CAA995900036B86 /* GDBaseCell.h */,
-				37A9DABB1CAA995900036B86 /* GDBaseCell.m */,
 				3721E5091CAB6F2300D4957D /* PrefixHeader.pch */,
+				371BE33E1CABB3C6004A0471 /* Base */,
+				371BE34D1CABB8DB004A0471 /* WebProgressView */,
 				37A9DAB01CAA933D00036B86 /* Src */,
 			);
 			path = Other;
@@ -367,6 +419,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				371BE3611CABBC66004A0471 /* GDHotCell.xib in Resources */,
+				371BE34C1CABB3F0004A0471 /* GDDetailViewController.xib in Resources */,
+				371BE3591CABBC33004A0471 /* GDListCell.xib in Resources */,
 				37A9DA721CAA855300036B86 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,19 +482,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				37A9DA6A1CAA855300036B86 /* AppDelegate.m in Sources */,
+				371BE3471CABB3C6004A0471 /* GDBaseTableViewController.m in Sources */,
+				371BE3581CABBC33004A0471 /* GDListCell.m in Sources */,
 				37A9DA931CAA8CDC00036B86 /* GDNavigationController.m in Sources */,
 				37CA93311CAB7A0C00969902 /* GDHotViewController.m in Sources */,
 				37A9DAAC1CAA901300036B86 /* GDAbroadTableViewController.m in Sources */,
 				37A9DAA91CAA900000036B86 /* GDHomeViewController.m in Sources */,
+				371BE34B1CABB3F0004A0471 /* GDDetailViewController.m in Sources */,
 				3721E50C1CAB702100D4957D /* GDListModel.m in Sources */,
+				371BE3461CABB3C6004A0471 /* GDBaseCell.m in Sources */,
+				371BE3601CABBC66004A0471 /* GDHotCell.m in Sources */,
 				37A9DA961CAA8CED00036B86 /* GDTabBarController.m in Sources */,
-				37A9DAB91CAA98E900036B86 /* GDBaseButton.m in Sources */,
+				371BE3541CABB8DB004A0471 /* YHWebViewProgressView.m in Sources */,
 				37A9DAAF1CAA901A00036B86 /* GDRankTableViewController.m in Sources */,
 				37A9DAB31CAA933D00036B86 /* MLNavigationController.m in Sources */,
 				37CA93341CAB84F500969902 /* GDHotModel.m in Sources */,
-				37A9DAB61CAA98DC00036B86 /* GDBaseTableViewController.m in Sources */,
+				371BE3531CABB8DB004A0471 /* YHWebViewProgress.m in Sources */,
 				37A9DA671CAA855300036B86 /* main.m in Sources */,
-				37A9DABC1CAA995900036B86 /* GDBaseCell.m in Sources */,
+				371BE3451CABB3C6004A0471 /* GDBaseButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,7 +543,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -521,7 +581,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -536,7 +596,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = guangdiu/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = guangdiu/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.guangdiu.app.guangdiu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -551,7 +611,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = guangdiu/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = guangdiu/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.guangdiu.app.guangdiu;
 				PRODUCT_NAME = "$(TARGET_NAME)";

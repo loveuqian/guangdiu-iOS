@@ -23,8 +23,7 @@
 {
     if (self.childViewControllers.count >= 1) {
         UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [backButton setTitle:@"back" forState:UIControlStateNormal];
-        [backButton setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+        [backButton setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
         [backButton sizeToFit];
         [backButton addTarget:self action:@selector(backButtonClick) forControlEvents:UIControlEventTouchUpInside];
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
